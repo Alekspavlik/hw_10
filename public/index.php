@@ -58,9 +58,8 @@ use Hillel\Models\Tag;
 
 //Exercise 8
 
-$random = Tag::all()->pluck('id')->random(3)->all();
-
-$posts = Post::all();
-foreach ($posts as $post) {
-    $post->tags()->sync($random);
-}
+//$posts = Post::all();
+//foreach ($posts as $post) {
+//    $random = Tag::all()->pluck('id')->random(3)->all();
+//    $post->tags()->sync($random);
+//}
